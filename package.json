@@ -1,0 +1,25 @@
+{
+  "name": "anychart-nodejs-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AnyChart/anychart-nodejs-sample.git"
+  },
+  "keywords": [
+    "anychart"
+  ],
+  "author": "Aleksandr Batsuev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnyChart/anychart-nodejs-sample/issues"
+  },
+  "homepage": "https://github.com/AnyChart/anychart-nodejs-sample#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongodb": "^2.0.46"
+  }
+}
