@@ -34,12 +34,10 @@ app.get('/init', function(req, res) {
         }
     ], function(err, results) {       
         res.json({
-            'quarters': [1, 2, 3, 4],
             'regions': results[0],
             'industries': results[1],
             'products': results[2],
-            'sales_reps': results[3],
-            'years': results[4].map(function(item) {return item._id; })
+            'sales_reps': results[3]
         });
     });
 });

@@ -45,7 +45,6 @@ var Filters = React.createClass({
 
     getInitialState: function getInitialState() {
         return {
-            years: [],
             quarters: [],
             regions: [],
             industries: [],
@@ -76,8 +75,6 @@ var Filters = React.createClass({
         return React.createElement(
             "form",
             { className: "form-horizontal" },
-            React.createElement(GroupSelector, { id: "years", label: "Years", onChange: this.onChange,
-                items: this.state.years }),
             React.createElement(GroupSelector, { id: "regions", label: "Regions", onChange: this.onChange,
                 items: this.state.regions }),
             React.createElement(GroupSelector, { id: "industries", label: "Industries", onChange: this.onChange,
@@ -107,7 +104,6 @@ function setupUI(data, change) {
     };
     var onChange = function onChange(state) {
         change({
-            years: getSelectedIds(state.years),
             products: getSelectedIds(state.products),
             industries: getSelectedIds(state.industries),
             regions: getSelectedIds(state.regions),
@@ -116,7 +112,6 @@ function setupUI(data, change) {
     };
     var filters = React.render(React.createElement(Filters, { onChange: onChange }), $("#filters").get(0));
     filters.setState({
-        years: data.years.map(mapToObj),
         industries: data.industries.map(setSelected),
         regions: data.regions.map(setSelected),
         sales: data.sales_reps.map(setSelected),
