@@ -7,7 +7,7 @@
 * index.js - nodejs source
 * dump/ - database dump
 
-## Requirenments
+## Requirements
 * nodejs 0.10+
 * mongodb 3.0+
 * babel (optional) for converting jsx to js http://babeljs.io
