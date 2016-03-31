@@ -4,26 +4,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
       <script src="//cdn.anychart.com/js/latest/anychart.min.js"></script>
-      <script src="//fb.me/react-0.13.3.min.js"></script>
-      <script src="/js/ui.js"></script>
-      <script src="/js/main.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="main.js"></script>
       <style type="text/css">
-        .chart { height: 400px; }
+        #container {
+          width: 100%;
+          height: 500px;
+        }
       </style>
     </head>
     <body>
-        <div class="container-fluid">
-            <h1>Sales dashboard</h1>
-            <div id="filters" class="row"></div>
-            <div class="row">
-                <div class="col-xs-6 chart" id="rev-by-industry"></div>
-                <div class="col-xs-6 chart" id="rev-by-sales"></div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 chart" id="rev-by-product"></div>
-                <div class="col-xs-6 chart" id="rev-by-quarter"></div>
-            </div>
-        </div>
+        <div id="container"></div>
     </body>
 </html>
