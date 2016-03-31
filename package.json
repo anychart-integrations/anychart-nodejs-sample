@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/AnyChart/anychart-nodejs-sample#readme",
   "dependencies": {
-    "async": "^1.5.0",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "mongodb": "^2.1.14"
