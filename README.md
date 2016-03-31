@@ -8,7 +8,7 @@
 * dump/ - database dump
 
 ## Requirements
-* nodejs 0.10+
+* nodejs 4.0+
 * mongodb 3.0+
 * babel (optional) for converting jsx to js http://babeljs.io
 
