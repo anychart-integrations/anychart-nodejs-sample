@@ -35,7 +35,7 @@ $(function() {
             });
             return [entry.name, item.revenue];
         });
-    };
+    }
 
     var convertRevenueByIndustry = function(rows) {
         var industries = idMap['industries'];
