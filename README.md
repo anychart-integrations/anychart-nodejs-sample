@@ -14,7 +14,7 @@
 
 ## Database setup
 
-    mongorestore --dir ./dump
+    mongorestore -d anychart_sample ./dump
 
 ## Running app
 
