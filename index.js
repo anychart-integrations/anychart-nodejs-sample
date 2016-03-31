@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var dbConn;
 
-mongo.MongoClient.connect('mongodb://localhost:27000/anychart_sample', function(err, db) {
+mongo.MongoClient.connect('mongodb://localhost:27017/anychart_sample', function(err, db) {
     assert.equal(null, err);
     console.log("Connected correctly to mongodb server.");
     dbConn = db;
